@@ -7,6 +7,6 @@ export default function () {
 
   const progressBar = document.createElement('img');
   progressBar.className = 'progress-bar';
-  progressBar.src = 'spinner-of-dots.png';
+  progressBar.src = '/myYoutube/images/spinner-of-dots.png';
   mainSection.appendChild(progressBar);
 }
