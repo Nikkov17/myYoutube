@@ -1,0 +1,14 @@
+{
+    "extends": "eslint-config-airbnb",
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "globals": {
+        "document": false
+    },
+    "rules": {
+      "no-restricted-globals": ["error", "event", "fdescribe"],
+      "no-console": "off"
+    }
+}
