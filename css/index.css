@@ -69,6 +69,7 @@ body{
     border: 0;
     width: 80%;
     font-size: 1.2vw;
+    padding-left: 4%;
 }@media screen and (max-device-width: 1200px){
     .search-input{
         font-size: 4vw;
