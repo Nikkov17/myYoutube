@@ -5,8 +5,8 @@ export default function () {
   const mainSection = document.querySelector('body');
   mainSection.appendChild(main);
 
-  const progressBar = document.createElement('img');
+  const progressBar = document.createElement('div');
   progressBar.className = 'progress-bar';
-  progressBar.src = "../images/spinner-of-dots.png";
+  // progressBar.src = "../images/spinner-of-dots.png";
   mainSection.appendChild(progressBar);
 }
