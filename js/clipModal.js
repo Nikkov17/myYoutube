@@ -8,7 +8,7 @@ export default function clipModal() {
   const iframe = document.querySelector('#iframe');
   iframe.src = `https://www.youtube.com/embed/${this.id}`;
 
-  const curInfo = document.querySelectorAll(`#${this.id}`);
+  const curInfo = document.querySelectorAll(`.${this.id}`);
 
   modal.children[1].innerHTML = curInfo[1].innerHTML;
   modal.children[2].innerHTML = curInfo[2].innerHTML;

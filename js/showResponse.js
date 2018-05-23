@@ -11,38 +11,33 @@ export default function showResponse(response, statistics) {
 
     const clipImg = document.createElement('img');
     clipImg.src = response.items[i].snippet.thumbnails.medium.url;
-    clipImg.className = 'clip-img';
+    clipImg.className = 'clip-img ' + response.items[i].id.videoId;
     clipImg.id = response.items[i].id.videoId;
     clipImg.onclick = clipModal;
     div.appendChild(clipImg);
 
     const clipTitle = document.createElement('div');
-    clipTitle.className = 'clip-title';
-    clipTitle.id = response.items[i].id.videoId;
+    clipTitle.className = 'clip-title ' + response.items[i].id.videoId;
     clipTitle.textContent = response.items[i].snippet.title;
     div.appendChild(clipTitle);
 
     const channelTitle = document.createElement('div');
-    channelTitle.className = 'clip-info channel-title';
-    channelTitle.id = response.items[i].id.videoId;
+    channelTitle.className = 'clip-info channel-title ' + response.items[i].id.videoId;
     channelTitle.textContent = response.items[i].snippet.channelTitle;
     div.appendChild(channelTitle);
 
     const viewsCount = document.createElement('div');
-    viewsCount.className = 'clip-info';
-    viewsCount.id = response.items[i].id.videoId;
+    viewsCount.className = 'clip-info ' + response.items[i].id.videoId;
     viewsCount.textContent = `${statistics.items[i].statistics.viewCount} views`;
     div.appendChild(viewsCount);
 
     const clipDescription = document.createElement('div');
-    clipDescription.className = 'clip-info clip-desription';
-    clipDescription.id = response.items[i].id.videoId;
+    clipDescription.className = 'clip-info clip-desription ' + response.items[i].id.videoId;
     clipDescription.textContent = response.items[i].snippet.description;
     div.appendChild(clipDescription);
 
     const clipPublished = document.createElement('div');
-    clipPublished.className = 'clip-info clip-published';
-    clipPublished.id = response.items[i].id.videoId;
+    clipPublished.className = 'clip-info clip-published ' + response.items[i].id.videoId;
     clipPublished.textContent = publishTime;
     div.appendChild(clipPublished);
   }
