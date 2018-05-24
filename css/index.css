@@ -163,13 +163,17 @@ body{
 }
 
 .clip-info{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
     padding: 2px;
     margin-top: 2px;
     font-size: 1vw;
 }
 @media screen and (max-device-width: 1200px){
     .clip-info{
-        font-size: 2.5vw;
+        max-width: 100%;
+        font-size: 1.5vw;
     }
 }
 
